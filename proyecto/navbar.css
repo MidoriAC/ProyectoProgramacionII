@@ -1,0 +1,48 @@
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rosybrown;
+}
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+.nav-boton{
+    background: #404969;
+    color: #bde4f4;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+.nav-boton:hover{
+        background:#FF3371 ;
+    }
+.nav-boton:active{
+        background:#FFFC33 ;
+    }
+
+
+
+@media (max-width: 775px) {
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}

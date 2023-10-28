@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <link rel="stylesheet" href="CSS/estilos.css">
+<BODY bgcolor="aquamarine"> 
+    <img src="umg.png" alt="logo de UMG">
+    <p align = "right"> UNIVERSIDAD MARINO GALVEZ DE GUATEMALA   </p>
+    <p align = "right"> SANTA CRUZ DEL QUICHE, QUICHE. </p>
+    <p align = "right"> PROGRAMACION II  </p>
+</BODY>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO.</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+    
+<body>
+    <center><H1>PROYECTO DE PROGRAMACION.</H1></center>
+    <center><h2>PROGRAMACION II</h2></center>
+
+    <nav>
+        <button class="nav-boton " onclick="accion()">Unidades.</button>
+
+        <a href="unidad1.html" class="nav-enlace desaparece">Unidad 1.</a>
+        <a href="unidad2.html" class="nav-enlace desaparece">Unidad 2.</a>
+        <a href="unidad3.html" class="nav-enlace desaparece">Unidad 3.</a>
+        <a href="unidad4.html" class="nav-enlace desaparece">Unidad 4.</a>
+        <a href="unidad5.html" class="nav-enlace desaparece">Unidad 5.</a>
+     
+    </nav>
+
+    <script>
+        function accion(){
+            console.log('esta funcionando mi boton')
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+
+    </script>
+</body>
+</html>
